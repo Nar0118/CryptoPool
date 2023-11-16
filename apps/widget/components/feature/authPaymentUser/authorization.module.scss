@@ -1,0 +1,239 @@
+.creatorInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+  span,
+  a {
+    color: var(--gray_1150);
+    font-size: var(--text_xsm);
+  }
+}
+
+.creatorInfo :nth-child(2) {
+  color: var(--blue_700);
+}
+
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 45px;
+
+  .loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 375px;
+    width: 100%;
+    background-color: var(--white_900);
+    padding: 20px 15px;
+    border-radius: 20px;
+    height: max-content;
+    position: relative;
+
+    .isMobile {
+      color: red;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .linkSection {
+      margin-bottom: 20px;
+
+      a {
+        font-weight: 400;
+        font-size: var(--text_sm);
+        line-height: 16px;
+        color: var(--purple_900);
+      }
+    }
+
+    .loginButton {
+      margin: 0 auto;
+      width: 162px;
+      font-size: 18px;
+      font-family: 'Roboto' sans-serif;
+      border-radius: 20px !important;
+      background: linear-gradient(to right, #ad83e9 0%, #e285e3 100%);
+      color: #ffffff;
+
+      .black {
+        background-color: var(--purple_900) !important;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .inputsContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
+
+      .formItem {
+        max-width: 440px;
+        width: 100%;
+        position: sticky;
+
+        label {
+          margin-bottom: 6px;
+          font-weight: 500;
+          font-size: var(--text_sl);
+          line-height: 18px;
+          color: var(--gray_600);
+        }
+
+        :global(.ant-input-suffix) {
+          svg {
+            fill: var(--black_300) !important;
+          }
+        }
+      }
+
+      .formInput {
+        border-radius: 10px;
+        height: 40px;
+        border: 1px solid var(--gray_600);
+      }
+
+      .formAmountInput {
+        padding-top: 0;
+        height: 60px !important;
+      }
+
+      .formInput::placeholder {
+        font-size: 10px;
+        position: absolute;
+        top: 12px;
+      }
+
+      .formAmountInput::placeholder {
+        font-size: 10px;
+        position: absolute;
+        top: 15px;
+        width: 190px;
+        white-space: pre-line;
+      }
+
+      .eyeIcon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        right: 0;
+
+        .eye {
+          z-index: 50 !important;
+          cursor: pointer;
+        }
+      }
+
+      .formInput {
+        border-radius: 10px;
+        height: 40px;
+        border: 1px solid var(--gray_600);
+      }
+    }
+
+    .signUp {
+      display: flex;
+      column-gap: 16px;
+
+      p {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: var(--text_sm);
+        color: var(--gray_600);
+        margin-bottom: 0;
+      }
+
+      a {
+        font-weight: 600;
+        font-size: var(--text_sm);
+        color: var(--purple_900);
+      }
+    }
+
+    .authHeader {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+
+      .loginHeader {
+        color: var(--black_300);
+        display: flex;
+        font-size: var(--text_x);
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media screen and (max-height: 800px) {
+    .loginFormContainer {
+      gap: 10px;
+
+      .buttonItem {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .creatorInfo {
+    width: 95% !important;
+  }
+
+  .authorizationPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .loginPage {
+      width: 95%;
+
+      .bannerImage {
+        display: none;
+      }
+
+      .loginFormContainer {
+        width: 95% !important;
+        right: 0 !important;
+
+        .isMobile {
+          font-size: 14;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .authorizationPage {
+    .loginPage {
+      width: 100%;
+
+      .loginFormContainer {
+        width: 95% !important;
+        right: 0 !important;
+
+        .isMobile {
+          font-size: 14px !important;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

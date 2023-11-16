@@ -1,0 +1,28 @@
+.navItem {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 17px;
+  background: var(--white_900);
+  cursor: pointer;
+  min-width: 171px;
+  &.activeItem {
+    box-shadow: 0px 0px 8.39264px rgba(0, 0, 0, 0.1);
+    border-radius: 8.39264px;
+    span {
+      font-weight: 500;
+      color: #b284eb;
+    }
+  }
+  &:hover {
+    box-shadow: 0px 0px 8.39264px rgba(0, 0, 0, 0.1);
+    border-radius: 8.39264px;
+  }
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #585858;
+  }
+}

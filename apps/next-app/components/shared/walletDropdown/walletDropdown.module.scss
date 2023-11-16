@@ -1,0 +1,31 @@
+.dropdown {
+  background-color: var(--white_900);
+  border-radius: 5px;
+  width: 140px;
+
+  .dropdownItem {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+
+    span {
+      font-weight: 500;
+      font-size: var(--text_xs);
+      color: var(--black_300);
+      margin-top: 2px;
+    }
+
+    &:hover {
+      border-radius: 5px;
+      background-color: var(--gray_100);
+    }
+  }
+  
+  @media screen and (max-width:720px) {
+    width: 100%;
+  }
+}

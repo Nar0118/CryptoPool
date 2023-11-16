@@ -1,0 +1,20 @@
+.loader {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 210px);
+
+  :global(.ant-spin) {
+    color: var(--black_900) !important;
+  }
+
+  :global(.ant-spin-text) {
+    margin-top: 10px;
+  }
+
+  .spinner {
+    font-size: var(--text_l);
+  }
+}

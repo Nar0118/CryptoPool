@@ -1,0 +1,78 @@
+.container {
+  .chartHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .title {
+      font-weight: 500;
+      font-size: var(--text_base);
+    }
+
+    .buttonsWrapper {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      .button {
+        width: max-content;
+        font-weight: 700;
+        color: var(--gray_600);
+        border: none;
+
+        &:hover {
+          border: 1px solid var(--gray_600);
+          color: --black_900;
+          span {
+            color: var(--black_900);
+          }
+        }
+
+        &:focus {
+          border: 1px solid var(--gray_600);
+          span {
+            color: var(--black_900);
+          }
+        }
+      }
+
+      .pdfButton {
+        flex-direction: row-reverse;
+        width: max-content;
+        font-weight: 700;
+        margin-left: 30px;
+
+        &:hover {
+          border: 1px solid var(--gray_600);
+          color: --black_900;
+          span {
+            color: var(--black_900);
+          }
+        }
+
+        &:focus {
+          border: 1px solid var(--gray_600);
+          span {
+            color: var(--black_900);
+          }
+        }
+      }
+
+      :global {
+        .ant-btn:hover,
+        .ant-btn:focus {
+          color: var(--black_900);
+        }
+      }
+    }
+  }
+
+  .imageContainer > div {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+.whiteBox {
+  padding: 25px 20px;
+}

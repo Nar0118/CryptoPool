@@ -1,0 +1,45 @@
+.widgetPaymentModal {
+  margin-left: 0 !important;
+  :global(.ant-modal-content) {
+    border: 2px solid var(--purple_200);
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+
+  :global(.ant-modal-body) {
+    padding: 10px;
+  }
+
+  div {
+    border-radius: 10px !important;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .widgetPaymentModal {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .widgetPaymentModal {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0 !important;
+
+    :global(.ant-modal-body) {
+      padding: 10px;
+    }
+  }
+}

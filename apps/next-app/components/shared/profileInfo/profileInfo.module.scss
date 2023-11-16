@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  column-gap: 25px;
+  align-items: center;
+  margin-top: 25px;
+
+  .userLogo {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px !important;
+    background: var(--rose_700);
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: var(--text_xl);
+    color: var(--white_900);
+    line-height: 43px;
+  }
+
+  .userName {
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--blue_900);
+  }
+
+  p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray_950);
+  }
+}

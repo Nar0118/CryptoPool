@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  background-color: var(--white_900);
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  margin-top: 40px;
+
+  .headerSection {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--blue_900);
+    }
+  }
+
+  .helpContainer {
+    display: flex;
+    column-gap: 100px;
+
+    .helpSection {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        border: 1px solid var(--black_900);
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--blue_900);
+        width: max-content;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        color: var(--blue_900);
+        border-width: thin;
+      }
+    }
+  }
+}

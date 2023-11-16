@@ -1,0 +1,16 @@
+.recoverPassword {
+  h2 {
+    font-weight: 700;
+    font-size: var(--text_xl);
+  }
+
+  p {
+    font-weight: 500;
+    font-size: var(--text_tiny);
+    color: var(--black_300);
+  }
+
+  .button {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,155 @@
+.container {
+  .titleSection {
+    margin-bottom: 25px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: -15px;
+    }
+
+    .formItem {
+      margin: 0;
+    }
+
+    :global(.ant-form-item-explain-error) {
+      text-align: start;
+    }
+  }
+
+  .formElement {
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--white_200);
+  }
+
+  .formElement::placeholder {
+    font-weight: 400 !important;
+    font-size: var(--text_sm) !important;
+    line-height: 16px !important;
+    letter-spacing: 0.02em !important;
+    color: var(--gray_300) !important;
+  }
+
+  label {
+    text-align: start !important;
+  }
+
+  .copyButton {
+    max-width: 220px;
+    width: 100%;
+    background: var(--button_gradient);
+    border-radius: 24px;
+    display: flex;
+    column-gap: 11px;
+    padding: 5px 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    .arrowRight {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--white_900);
+      }
+    }
+  }
+
+  .amountSection {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    .formElementAmount {
+      height: 45px;
+      background-color: var(--white_200);
+      border-radius: 5px;
+      width: 230px;
+    }
+
+    .formElementAmount::placeholder {
+      font-weight: 400 !important;
+      font-size: var(--text_sm) !important;
+      line-height: 16px !important;
+      letter-spacing: 0.02em !important;
+      color: var(--gray_300) !important;
+    }
+
+    .conversionType {
+      width: 35px;
+      height: 35px;
+      background: var(--white_900);
+      border: 1px solid var(--gray_250);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        filter: var(--button_disabled);
+      }
+
+      &.activeConversion {
+        background: var(--rose_500);
+        border: none;
+
+        img {
+          filter: var(--button_active);
+        }
+      }
+    }
+
+    .currency {
+      display: flex;
+      gap: 5px;
+      label {
+        border: none;
+        padding: 0;
+        color: white;
+        border-color: unset;
+        border-right-color: white !important;
+        &:focus-within {
+          box-shadow: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .confirmButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    .invoiceConfirmButton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 200px;
+      height: 50px;
+      padding: 5px;
+      background: var(--purple_gradient);
+      border-radius: 25px;
+      column-gap: 25px;
+      margin: 0 auto;
+
+      h1 {
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--white_900);
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+html:root {
+  --black_300: #151515;
+  --black_600: #1c1c1e;
+  --white_900: #ffffff;
+  --blue_500: #2f80ed;
+  --red_100: #ff0000;
+  --green_250: #24cc6c;
+  --gray_500: #f2f5f9;
+  --gray_600: #797979;
+  --gray_700: #c5c5c5;
+  --gray_1050: #bcbcbc;
+  --gray_1100: #6a6a6a;
+  --purple_900: #5438dd;
+  --button_hover_dark: #393939;
+  --button_hover_blue: #579fff;
+  --button_hover_white: #eeeeee;
+}
+
+html:root {
+  --text_xl: 32px;
+  --text_lg: 24px;
+  --text_base: 20px;
+  --text_sl: 15px;
+  --text_sm: 14px;
+  --text_xs: 12px;
+  --text_xsm: 10px;
+  --text_min: 8px;
+  --text_xmin: 6px;
+}
+
+html,
+body {
+  .ant-modal-wrap {
+    overflow: hidden;
+  }
+  --primary-font: Roboto;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  user-select: initial;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+}

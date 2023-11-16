@@ -1,0 +1,279 @@
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bannerImage {
+    margin-top: 30px;
+  }
+
+  .loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 100%;
+    background-color: var(--white_900);
+    padding: 20px 60px;
+    border-radius: 20px;
+    height: max-content;
+    position: relative;
+    right: 150px;
+
+    .logoContainer {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    .forgotPassword {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-weight: 500;
+        font-size: var(--text_sm);
+        color: var(--black_300);
+      }
+
+      :global(.ant-checkbox-inner::after) {
+        border-color: var(--black_300) !important;
+      }
+
+      :global {
+        .ant-checkbox-inner {
+          border-color: var(--gray_800) !important;
+          background-color: var(--white_900) !important;
+        }
+
+        :global(.ant-checkbox-checked:after) {
+          border-color: var(--black_300) !important;
+        }
+      }
+    }
+
+    .loginButton {
+      max-width: 440px;
+      width: 100% !important;
+      border-radius: 20px !important;
+      margin-top: 10px;
+
+      .black {
+        background-color: var(--purple_900) !important;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .inputsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .formItem {
+        max-width: 440px;
+        width: 100%;
+        height: 25px;
+        margin-bottom: 60px;
+
+        label {
+          margin-bottom: 6px;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 18px;
+          color: var(--gray_600);
+        }
+
+        :global(.ant-input-suffix) {
+          svg {
+            fill: var(--black_300) !important;
+          }
+        }
+      }
+
+      .eyeIcon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top: 20px;
+
+        .eye {
+          z-index: 50 !important;
+          cursor: pointer;
+        }
+      }
+
+      .formInput {
+        border-radius: 10px;
+        height: 40px;
+        border: 1px solid var(--gray_600);
+        border: 1px solid #797979;
+      }
+
+      .formEmailInput {
+        border-radius: 10px;
+        height: 40px;
+        border: 1px solid #797979;
+      }
+
+      .recaptcha {
+        transform: scale(0.71);
+        -webkit-transform: scale(0.71);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+        margin: 15px 80px 0 0;
+      }
+    }
+
+    .signUp {
+      display: flex;
+      column-gap: 16px;
+
+      p {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: var(--text_sm);
+        color: var(--gray_600);
+        margin-bottom: 0;
+      }
+
+      a {
+        font-weight: 600;
+        font-size: var(--text_sm);
+        color: var(--purple_900);
+      }
+    }
+
+    .moreInfo {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--gray_600);
+      margin-top: 45px;
+    }
+
+    .loginHeader {
+      color: var(--black_300);
+      display: flex;
+      margin-bottom: 25px;
+      font-size: var(--text_xl);
+      font-weight: 600;
+    }
+  }
+}
+
+.authButtonsContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.authBtn {
+  padding: 10px;
+  background-color: var(--white_400);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authBtn {
+  transition: 0.3s;
+
+  div {
+    background-color: var(--white_400) !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    box-shadow: var(--shadow_black);
+    cursor: pointer;
+  }
+
+  button {
+    box-shadow: none !important;
+
+    span {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    div {
+      margin: 0 !important;
+    }
+  }
+}
+
+@media screen and(max-width: 1240px) {
+  @media screen and(min-width: 700px) {
+    .loginFormContainer {
+      width: 300px;
+
+      .loginHeader {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: var(--text_lg);
+      }
+
+      .inputsContainer {
+        .formItem {
+          width: 300px;
+          height: 25px;
+          margin-bottom: 50px;
+        }
+
+        .formEmailInput {
+          height: 30px;
+        }
+
+        .formInput {
+          height: 30px;
+        }
+      }
+
+      .loginButton {
+        height: 30px !important;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 700px) {
+  .loginFormContainer {
+    margin-top: 150px;
+  }
+}
+
+@media screen and(max-width: 425px) {
+  .loginHeader {
+    margin-bottom: 15px !important;
+  }
+
+  .inputsContainer {
+    max-width: 300px;
+    align-items: flex-start !important;
+
+    .formItem {
+      max-width: 300px;
+    }
+  }
+
+  .forgotPassword {
+    max-width: 300px;
+  }
+
+  .loginButton {
+    max-width: 300px !important;
+  }
+
+  .signUp {
+    max-width: 300px;
+  }
+}

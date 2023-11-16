@@ -1,0 +1,32 @@
+.message {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0px !important;
+  width: 100%;
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    border-right: 1px solid var(--gray_400);
+    font-weight: 500;
+    font-size: var(--text_m);
+    line-height: 24px;
+    color: var(--gray_550);
+    margin-bottom: 0px !important;
+  }
+
+  img {
+    margin-bottom: 0px !important;
+    cursor: pointer;
+  }
+}
+
+.notification {
+  width: max-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--light_gray_100);
+}

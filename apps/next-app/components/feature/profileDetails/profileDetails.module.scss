@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  background: var(--white_900);
+  border-radius: 10px;
+  padding: 20px 10px 0px 10px;
+  row-gap: 15px;
+  min-height: 255px;
+
+  .headerSection {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--blue_900);
+    }
+  }
+
+  .merchantItem {
+    cursor: pointer;
+    width: 100%;
+    background: var(--white_900);
+    border: 1px solid var(--gray_350);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--blue_900);
+    }
+  }
+}

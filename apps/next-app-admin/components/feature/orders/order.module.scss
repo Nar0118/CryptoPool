@@ -1,0 +1,61 @@
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 750px) {
+    padding: 10px;
+  }
+}
+
+.modalButtons {
+  width: 100px !important;
+  height: 30px !important;
+}
+
+.modalButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 10px;
+
+  @media screen and (max-width: 500px) {
+    justify-content: space-between;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: space-between;
+
+  .signUpButton {
+    width: 200px;
+  }
+
+  .rightButton {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .signUpButton {
+      width: 100px;
+    }
+
+    .rightButton {
+      width: 100px;
+    }
+  }
+}

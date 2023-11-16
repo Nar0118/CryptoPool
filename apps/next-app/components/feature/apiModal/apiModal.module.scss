@@ -1,0 +1,108 @@
+.apiModal {
+  div:nth-child(2) {
+    border-radius: 30px;
+  }
+
+  :global(.ant-modal-content) {
+    margin: 0 72px;
+  }
+
+  :global(.ant-modal-body) {
+    padding: 12px 34px 37px 40px;
+  }
+
+  .apiModalContent {
+    box-shadow: none !important;
+
+    .modalTitle {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 29px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 5px;
+      margin-bottom: 25px;
+
+      &::after {
+        content: '';
+        height: 2px;
+        width: 70px;
+        display: block;
+        background: var(--title_border_gradient);
+        border-radius: 10px;
+      }
+    }
+
+    .modalDescription {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--gray_650);
+      margin-bottom: 17px;
+    }
+
+    .otherPayments {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 80px;
+      margin-bottom: 20px;
+
+      .checkedIcon {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+      }
+    }
+
+    .cryptoCurrency {
+      position: relative;
+      margin-bottom: 25px;
+
+      .checkedIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -13px;
+        top: -11px;
+      }
+    }
+
+    .copyButton {
+      max-width: 220px;
+      width: 100%;
+      background: var(--button_gradient);
+      border-radius: 24px;
+      display: flex;
+      column-gap: 10px;
+      padding: 5px 0;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      cursor: pointer;
+
+      .arrowRight {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid var(--white_900);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: var(--white_900);
+      }
+    }
+  }
+}

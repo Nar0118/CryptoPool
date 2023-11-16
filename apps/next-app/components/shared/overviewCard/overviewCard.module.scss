@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  width: 22%;
+  height: 125px;
+  padding: 15px 6px;
+  align-items: center;
+  box-shadow: var(--box_shadow_black);
+  border-radius: 6px;
+  cursor: pointer;
+
+  .bottomArrow {
+    display: none;
+  }
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .title {
+      font-weight: 700;
+      font-size: var(--text_sm);
+      line-height: 16px;
+      color: var(--blue_900);
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .total {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 0px !important;
+
+    .pricePercent {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+
+    .totalPrice {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      height: 100%;
+      font-size: var(--text_x);
+      line-height: 35px;
+      color: var(--blue_900);
+      margin-bottom: 0px !important;
+    }
+
+    .promotionPercent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      height: 100%;
+      font-size: var(--text_sm);
+      line-height: 16px;
+      color: var(--green_100);
+      margin-bottom: 0px !important;
+    }
+
+    .downgradePercent {
+      @extend .promotionPercent;
+      color: var(--red_900);
+    }
+  }
+}
+
+.analyticsContainer {
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  min-width: 200px;
+  background-color: var(--white_900);
+
+  .titleContainer {
+    padding: 0 5px;
+    flex-direction: row;
+  }
+
+  .total {
+    justify-content: space-between;
+  }
+}
+
+.sales,
+.transactions,
+.income,
+.customers {
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(var(--white_900), var(--white_900)) padding-box,
+    linear-gradient(180deg, var(--purple_500), var(--purple_200)) border-box;
+
+  .bottomArrow {
+    display: flex;
+    position: absolute;
+    top: 125px;
+    left: 50%;
+  }
+}

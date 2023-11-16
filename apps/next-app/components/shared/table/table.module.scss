@@ -1,0 +1,220 @@
+.modal {
+  max-width: 490px;
+  width: 100%;
+
+  div:nth-child(2) {
+    border-radius: 10px;
+  }
+
+  max-width: 580px;
+  width: 100% !important;
+}
+
+.table {
+  width: 100%;
+
+  .statusIcon {
+    cursor: pointer;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    margin: 10px 0px;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    .title {
+      font-weight: 500;
+      font-size: var(--text_lg);
+      white-space: nowrap;
+
+      span {
+        display: flex;
+        align-items: center;
+      }
+
+      .title {
+        font-weight: 500;
+        font-size: 21px;
+        color: var(--blue_900);
+      }
+
+      .filter {
+        display: flex;
+        align-items: center;
+        padding: 4px 10px;
+        margin-top: 5px;
+        gap: 15px;
+        border: 1px solid var(--white_200);
+        border-radius: 20px;
+        height: max-content;
+
+        .filterContainer {
+          border: 1px solid var(--gray_350);
+          display: flex;
+          width: 80px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 15px;
+          column-gap: 10px;
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+
+  tr:hover {
+    td {
+      background: none !important;
+    }
+  }
+
+  :global(.ant-table-row) {
+    font-size: var(--text_tiny);
+    font-weight: 700;
+  }
+
+  .orderStatusRow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  :global {
+    .ant-table-cell::before {
+      width: 0 !important;
+    }
+    .ant-table-container
+      > .ant-table-content
+      > table
+      > tbody
+      > tr
+      > .ant-table-cell
+      > div
+      > .done {
+      font-weight: 500;
+      color: var(--green_100) !important ;
+    }
+
+    .ant-table-container
+      > .ant-table-content
+      > table
+      > tbody
+      > tr
+      > .ant-table-cell
+      > div
+      > .pending {
+      font-weight: 500;
+      color: var(--yellow_700) !important;
+    }
+
+    .ant-table-container
+      > .ant-table-content
+      > table
+      > tbody
+      > tr
+      > .ant-table-cell
+      > div
+      > .failed {
+      font-weight: 500;
+      color: var(--red_700) !important;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td,
+    .ant-table tfoot > tr > th,
+    .ant-table tfoot > tr > td {
+      padding: 10px 15px;
+      font-weight: 400;
+    }
+
+    .ant-pagination-next .ant-pagination-item-link {
+      border: none;
+    }
+
+    .ant-pagination-prev .ant-pagination-item-link {
+      border: none;
+    }
+
+    .ant-table-pagination.ant-pagination {
+      padding: 0 15px;
+    }
+
+    .ant-table-container > .ant-table-content > table > thead {
+      padding: 9px;
+      height: 40px;
+    }
+
+    .ant-pagination-item-active {
+      border: none;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
+    }
+
+    .ant-pagination-item {
+      border: none;
+    }
+
+    .ant-pagination-item-active a {
+      color: var(--blue_900);
+    }
+
+    .ant-table-container
+      > .ant-table-content
+      > table
+      > thead
+      > tr:first-child
+      th:first-child {
+      border-left: 1px solid var(--table_line);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    
+    .ant-table-thead > tr > th {
+      background: unset;
+    }
+
+    .ant-table-container table > thead > tr:first-child th:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-right: 1px solid var(--table_line) !important;
+    }
+
+    .ant-table-container
+      > .ant-table-content
+      > table
+      > thead
+      > tr
+      > .ant-table-cell {
+      border: 1px solid var(--table_line);
+      border-left: none;
+      color: var(--gray_500);
+    }
+
+    .ant-table-container
+      > .ant-table-content
+      > table
+      > tbody
+      > tr
+      > .ant-table-cell {
+      color: var(--blue_900);
+    }
+
+    .ant-table.ant-table-bordered
+      > .ant-table-container
+      > .ant-table-content
+      > table {
+      border: none;
+    }
+  }
+
+  :global(.ant-table) {
+    overflow: auto;
+  }
+}

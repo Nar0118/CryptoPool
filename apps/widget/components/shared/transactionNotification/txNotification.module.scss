@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+
+  .basePosition {
+    transition: 0.5s;
+    position: absolute;
+    width: 87%;
+    bottom: -300px;
+    z-index: 11;
+  }
+
+  .show {
+    transition: 0.5s;
+    bottom: 10px !important;
+  }
+}

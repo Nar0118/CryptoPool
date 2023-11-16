@@ -1,0 +1,17 @@
+.generalModeBg {
+  display: flex;
+  background-color: var(--white_900);
+  height: 100%;
+
+  .rightSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.context {
+  background: #f2f5f9;
+  height: 100%;
+}

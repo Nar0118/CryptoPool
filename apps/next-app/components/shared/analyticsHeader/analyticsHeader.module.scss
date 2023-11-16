@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .dropDown {
+    background: var(--white_900);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+  }
+
+  .downloadButton {
+    flex-direction: row-reverse;
+    width: max-content;
+    font-weight: 600;
+    height: 50px !important;
+    border: none;
+
+    &:hover {
+      border: none;
+      color: --black_900;
+      span {
+        color: var(--black_900);
+      }
+    }
+
+    &:focus {
+      border: none;
+      span {
+        color: var(--black_900);
+      }
+    }
+  }
+
+  :global {
+    .ant-btn:hover,
+    .ant-btn:focus {
+      color: var(--black_900);
+    }
+  }
+
+  .dropdownContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .textContent {
+      display: flex;
+      gap: 5px;
+
+      .timeFrame {
+        color: var(--gray_600);
+      }
+
+      .currentTime {
+        font-weight: 600;
+      }
+    }
+  }
+}

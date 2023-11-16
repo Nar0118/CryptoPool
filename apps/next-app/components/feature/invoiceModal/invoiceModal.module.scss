@@ -1,0 +1,8 @@
+.container {
+  max-width: 375px;
+  width: 100%;
+
+  div:nth-child(2) {
+    border-radius: 30px;
+  }
+}

@@ -1,0 +1,47 @@
+.navBar {
+  max-width: 212px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 28px;
+  background: var(--white_900);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 14px 17px 24px 24px;
+  height: 100vh;
+  z-index: 1000;
+
+  .list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .logoSection {
+    max-width: 157px;
+    cursor: pointer;
+  }
+
+  .logoutSection {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    cursor: pointer;
+    padding: 15px 30px;
+    position: fixed;
+    bottom: 10px;
+
+    &:hover {
+      box-shadow: 0px 0px 8.39264px rgba(0, 0, 0, 0.1);
+      border-radius: 8.39264px;
+      padding: 15px 30px;
+    }
+
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: var(--gray_900);
+    }
+  }
+}

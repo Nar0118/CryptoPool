@@ -1,0 +1,242 @@
+.withdrawModal {
+  max-width: 375px;
+  width: 100%;
+
+  div:nth-child(2) {
+    border-radius: 30px;
+  }
+
+  .titleSection {
+    text-align: center;
+
+    h1 {
+      margin-bottom: -15px;
+    }
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .firstSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    h1 {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 0;
+
+      .dollarIcon {
+        filter: var(--blue_icon);
+        margin-top: 1px !important;
+      }
+    }
+
+    .informationSection {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+
+      p {
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        color: var(--gray_950);
+      }
+
+      .warning {
+        display: flex;
+        padding: 10px 12px 10px 0;
+        border-bottom: 2px solid var(--purple_200);
+      }
+    }
+
+    .rightSection {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 12px;
+
+      p {
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 0px;
+      }
+
+      .conversionContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+
+        .conversionType {
+          width: 35px;
+          height: 35px;
+          background: var(--white_900);
+          border: 1px solid var(--gray_250);
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            filter: var(--button_disabled);
+          }
+
+          &.activeConversion {
+            background: var(--rose_500);
+            border: none;
+
+            img {
+              filter: var(--button_active);
+            }
+          }
+
+          &:disabled {
+            pointer-events: none;
+            opacity: 0.65;
+          }
+        }
+      }
+    }
+  }
+
+  .secondSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h1 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--black_550);
+    }
+
+    .successWalletSelector {
+      position: relative;
+      border: none;
+      cursor: pointer;
+
+      .successIcon {
+        position: absolute;
+        right: -10px;
+        top: -15px;
+      }
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 12px;
+      color: var(--gray_950);
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 16px;
+      margin: 15px 0px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      margin: 15px 0px;
+
+      span {
+        color: var(--blue_700);
+      }
+    }
+
+    .withdrawSelector {
+      width: 100%;
+      border: 1px solid var(--gray_500);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      column-gap: 5px;
+      border-radius: 5px;
+
+      h1 {
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: var(--gray_600);
+      }
+
+      img {
+        filter: var(--button_disabled);
+      }
+
+      &.activeWithdrawSelector {
+        background: var(--rose_500);
+        border: none;
+
+        h1 {
+          color: var(--white_900);
+        }
+
+        img {
+          filter: brightness(1.5);
+        }
+      }
+    }
+
+    .bankSection {
+      display: flex;
+      align-items: center;
+      column-gap: 25px;
+
+      h1 {
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 19px;
+        color: var(--blue_900);
+      }
+    }
+  }
+
+  .withdrawConfirmButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+    height: 50px;
+    padding: 5px;
+    background: var(--purple_gradient);
+    border-radius: 25px;
+    column-gap: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    h1 {
+      margin-bottom: 0px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: var(--white_900);
+      margin-left: 40px;
+    }
+  }
+}

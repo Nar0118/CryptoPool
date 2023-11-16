@@ -1,0 +1,11 @@
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  @media screen and (max-width: 750px) {
+    padding: 10px;
+  }
+}

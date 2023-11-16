@@ -1,0 +1,14 @@
+.paymentModal {
+  :global(.ant-modal-content) {
+    margin: 0 auto;
+  }
+
+  :global(.ant-modal-body) {
+    padding: 0;
+  }
+  
+  div {
+    border-radius: 10px !important;
+    max-width: 405px;
+  }
+}

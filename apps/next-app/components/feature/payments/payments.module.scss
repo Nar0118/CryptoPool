@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .topSection {
+    display: flex;
+    gap: 20px;
+  }
+
+  .middleSection {
+    display: flex;
+    gap: 20px;
+  }
+
+  .bottomSection {
+    display: flex;
+    gap: 20px;
+  }
+}

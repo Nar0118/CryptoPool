@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+
+  .headerText {
+    color: var(--gray_1050);
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--text_m);
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .congrats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      padding: 0 10px;
+      font-size: var(--text_sm);
+      color: var(--gray_300);
+      text-align: center;
+    }
+
+    .hands {
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 10px;
+
+      span {
+        font-size: var(--text_lg);
+        font-weight: 500;
+      }
+    }
+  }
+
+  .buttonWrapper {
+    display: flex;
+    justify-content: center;
+
+    .gotoHome {
+      background-image: var(--modal_button_gradient);
+      display: block;
+      padding: 10px;
+      text-align: center;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: var(--white_900);
+      box-shadow: 0 0 20px var(--white_900);
+      border-radius: 30px !important;
+      font-size: var(--text_m);
+      font-weight: 500;
+      max-width: 200px;
+      height: unset !important;
+    }
+
+    .redirectionBtn {
+      width: 300px;
+      background-image: var(--modal_button_gradient);
+      padding: 10px;
+      text-align: center;
+      color: var(--white_900);
+      border-radius: 30px !important;
+      font-size: var(--text_m);
+      font-weight: 500;
+      height: unset !important;
+
+      .top {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .redirectingUrl {
+        margin: 0;
+        color: var(--white_900);
+        font-size: var(--text_sm);
+        overflow: hidden;
+      }
+    }
+
+    .gotoHome:hover {
+      background-position: right center;
+      color: var(--white_900);
+      text-decoration: none;
+      border-color: unset !important;
+    }
+  }
+
+  .support {
+    text-align: center;
+
+    a {
+      color: var(--blue_400);
+      font-size: var(--text_xsm);
+    }
+  }
+
+  .modalFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .infoSection {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: var(--blue_400);
+        font-size: var(--text_xsm);
+      }
+    }
+  }
+}

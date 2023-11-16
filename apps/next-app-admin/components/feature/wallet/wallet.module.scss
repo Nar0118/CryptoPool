@@ -1,0 +1,10 @@
+.container {
+  padding: 0 20px;
+
+  .textSplit {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+  }
+}

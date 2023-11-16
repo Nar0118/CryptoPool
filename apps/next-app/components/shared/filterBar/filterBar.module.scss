@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+
+  .auxiliaryTools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    max-width: 150px;
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    .title {
+      font-weight: 700;
+      font-size: var(--text_lg);
+    }
+
+    .filter {
+      display: flex;
+      align-items: center;
+      padding: 4px 10px;
+      gap: 15px;
+      background: var(--white_900);
+      border: 1px solid var(--gray_350);
+      border-radius: 20px;
+      height: max-content;
+    }
+  }
+
+  .search > div {
+    border: 1px solid var(--gray_300);
+    border-radius: 8px;
+    column-gap: 5px;
+    height: 30px;
+  }
+
+  .largeSearch {
+    width: 70%;
+    margin-right: 50px;
+    background: var(--white_900);
+  }
+}

@@ -1,0 +1,123 @@
+.whiteBox {
+  padding: 0px !important;
+  margin: 0px !important;
+
+  .container {
+    display: flex;
+    margin: 0px !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    height: auto;
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+
+    .title {
+      margin: 0px !important;
+      font-weight: 500;
+      font-size: var(--text_m);
+      line-height: 19px;
+      color: var(--black_900);
+    }
+
+    .divider {
+      width: 100%;
+      margin: 0px !important;
+      border: 1px solid var(--purple_200);
+      background-color: var(--purple_200);
+      border-radius: 10px;
+      margin-bottom: 0px !important;
+    }
+  }
+
+  .iconBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px !important;
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .iconText {
+      font-weight: 500;
+      font-size: var(--text_tiny);
+      line-height: 14px;
+      color: var(--black_900);
+    }
+  }
+
+  .label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px !important;
+    margin-top: 30px !important;
+    font-weight: bold;
+    font-size: var(--text_s);
+    line-height: 16px;
+    color: var(--black_900);
+  }
+
+  .linkBox {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+
+    button > div {
+      border-radius: unset !important;
+    }
+
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100% !important;
+      height: 45px !important;
+      margin-bottom: 0px !important;
+      background-color: var(--white_200);
+      border: 1px solid var(--gray_350);
+      border-radius: 4px;
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 16px;
+        color: var(-gray_1000);
+        margin: 0px !important;
+      }
+    }
+
+    .button {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 45px !important;
+      width: max-content;
+      gap: 2px !important;
+      padding: 5px 15px !important;
+      border-radius: 4px !important;
+      border-color: var(--rose_600);
+
+      span {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+  }
+}
+
+.share {
+  width: 60px;
+  height: 60px;
+}

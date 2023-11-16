@@ -1,0 +1,85 @@
+.whiteBox {
+  padding: 20px 25px 50px 15px;
+  width: 100%;
+}
+
+.modal {
+  width: 400px;
+  padding: 0;
+  
+  .container {
+    .data {
+      margin-top: 0;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .title {
+    font-weight: 500;
+    font-size: var(--text_m);
+    line-height: 21px;
+    color: var(--blue_900);
+  }
+
+  .buttons {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+    .button {
+      width: auto !important;
+      font-weight: 500;
+      font-size: var(--text_sm);
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: var(--gray_350);
+      border: 1px solid var(--gray_450);
+      border-radius: 4px;
+      padding: 10px 20px !important;
+    }
+
+    .activeButton {
+      @extend .button;
+      color: var(--white_900);
+      background: var(--rose_500);
+      border: 1px solid var(--rose_500);
+    }
+  }
+
+  .data {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 0px !important;
+
+    .item {
+      display: list-item;
+      list-style-type: disc;
+
+      span {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .text {
+        font-weight: 450 !important;
+        font-size: 15 !important;
+        line-height: 14px !important;
+        color: var(--black_550) !important;
+      }
+
+      .value {
+        @extend .text;
+        font-weight: 550 !important;
+      }
+    }
+  }
+}

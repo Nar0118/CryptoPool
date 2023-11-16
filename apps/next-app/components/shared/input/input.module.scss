@@ -1,0 +1,20 @@
+.label {
+  color: var(--black_300);
+  margin-bottom: 2px;
+  display: block;
+  font-size: var(--text_tiny);
+}
+
+.input {
+  display: flex !important;
+  outline: none !important;
+  padding: 10px 25px;
+  color: var(--white_400) !important;
+  background-color: var(--white_900) !important;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04) !important;
+  color: var(--black_300) !important;
+
+  &:focus {
+    border: 1px solid var(--blue_500) !important;
+  }
+}

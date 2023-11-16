@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: 460px;
+
+  div {
+    border-radius: 10px;
+  }
+  
+  :global(.ant-modal-body) {
+    padding: 15px;
+  }
+}

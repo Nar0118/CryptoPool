@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  background-color: var(--white_900);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .headerSection {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--blue_900);
+    }
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: var(--blue_900);
+    margin-bottom: 10px;
+  }
+
+  .inviteButton {
+    cursor: pointer;
+    border: 1px solid var(--black_900);
+    padding: 10px 20px;
+    border-radius: 10px !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--blue_900);
+    width: max-content;
+  }
+}

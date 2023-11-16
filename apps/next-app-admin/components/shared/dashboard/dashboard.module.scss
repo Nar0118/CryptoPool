@@ -1,0 +1,36 @@
+.container {
+  padding: 20px 50px !important;
+  height: 100% !important;
+
+  .imageSection {
+    background-image: url(../../../public/authBanner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    height: 85vh;
+
+    .whiteSection {
+      min-height: 200px;
+      background-color: var(--white_900);
+      border-radius: 10px;
+      padding: 20px;
+
+      h1 {
+        text-align: center;
+      }
+
+      .itemSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .buttons > div {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

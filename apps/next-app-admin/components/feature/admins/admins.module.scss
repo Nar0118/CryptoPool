@@ -1,0 +1,162 @@
+.container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  .headerText {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 478px) {
+    padding: 25px;
+  }
+
+  @media screen and (max-width: 382px) {
+    padding: 5px;
+  }
+}
+
+.modalButtons {
+  width: 100px !important;
+  height: 30px !important;
+}
+
+.modal {
+  :global(.ant-modal-content) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 640px) {
+      font-size: var(--text_xs);
+    }
+  }
+}
+
+.modalButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 10px;
+
+  @media screen and (max-width: 650px) {
+    justify-content: space-between;
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+
+  :global(.ant-form-item-label) {
+    padding: 0;
+  }
+
+  .passwordContainer {
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+
+    :global(.ant-input-suffix) {
+      svg {
+        fill: var(--black_500) !important;
+      }
+    }
+  }
+
+  .formItem {
+    width: 100%;
+
+    label {
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.buttonSection {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+
+  .submitButton {
+    width: 200px;
+  }
+
+  .rightButton {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .submitButton {
+      width: 100px !important;
+    }
+
+    .rightButton {
+      width: 100px !important;
+    }
+  }
+}
+
+.editAdmin {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .formItem {
+    margin-bottom: 0;
+  }
+}
+
+.radioForm {
+  margin: 0;
+
+  :global(.ant-form-item-label) {
+    label {
+      font-size: var(--text_m);
+      font-weight: bold;
+    }
+  }
+}
+
+.adminInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .labelModal {
+    font-size: var(--text_m);
+    font-weight: bold;
+  }
+
+  .infoRows {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .searchForm {
+    flex-direction: column !important;
+
+    button {
+      margin: 0 auto;
+    }
+
+    .formSelect {
+      width: 100% !important;
+    }
+  }
+}

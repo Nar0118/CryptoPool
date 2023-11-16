@@ -1,0 +1,15 @@
+.button {
+  max-width: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+
+  span {
+    font-size: var(--text_base);
+    font-weight: 600;
+    color: var(--black_300);
+    opacity: 0.7;
+  }
+}

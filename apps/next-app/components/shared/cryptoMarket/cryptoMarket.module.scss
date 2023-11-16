@@ -1,0 +1,143 @@
+.whiteBox {
+  padding: 10px 15px 15px 15px !important;
+  width: 20%;
+  height: max-content !important;
+  min-width: 200px;
+}
+
+.verticalWhiteBox {
+  padding: 10px 15px 15px 15px !important;
+  width: 70%;
+  height: max-content !important;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: max-content;
+
+  .title {
+    width: 100%;
+    font-weight: 500;
+    font-size: var(--text_base);
+    line-height: 23px;
+    color: var(--blue_900);
+  }
+
+  .topSection {
+    width: 100%;
+  }
+
+  .conversion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    gap: 5px;
+
+    .conversionType {
+      width: 35px;
+      height: 35px;
+      background: var(--white_900);
+      border: 1px solid var(--gray_250);
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        filter: var(--button_disabled);
+      }
+
+      &.activeConversion {
+        background: var(--rose_500);
+        border: none;
+
+        img {
+          filter: var(--button_active);
+        }
+      }
+
+      &:disabled {
+        pointer-events: none;
+        opacity: 0.65;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: var(--text_xs);
+      line-height: 18px;
+      letter-spacing: 0.02em;
+      color: var(-blue_100);
+      margin-bottom: 5px !important;
+    }
+
+    div {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .footer {
+    width: 100%;
+    margin-top: 20px;
+
+    .button {
+      height: 30px !important;
+      border-radius: 16px !important;
+      font-weight: 500 !important;
+      font-size: var(--text_sm) !important;
+      line-height: 14px !important;
+    }
+  }
+}
+
+.verticalContainer {
+  @extend .container;
+  padding: 9px 15px 15px 15px;
+  min-width: 720px;
+  max-height: 200px;
+
+  .topSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .conversion {
+      justify-content: flex-end;
+      gap: 20px;
+    }
+  }
+
+  .buttomSection {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+
+    .cards {
+      width: 60% !important;
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    .footer {
+      width: auto !important ;
+      padding: 10px 40px !important;
+    }
+  }
+}
